@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+/* ─── Custom Theme Tokens ─────────────────────────────────────── */
+@theme inline {
+  --color-navy: #0A1628;
+  --color-navy-light: #142338;
+  --color-navy-lighter: #1e3048;
+  --color-indigo: #2D3FE0;
+  --color-indigo-light: #4D5CF0;
+  --color-indigo-dark: #1E2DB3;
+  --color-blue-accent: #4A90D9;
+  --color-saffron: #F5A623;
+  --color-saffron-light: #f7b84d;
+  --color-saffron-dark: #d9911a;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+
+  --font-sora: var(--font-sora-var);
+  --font-jakarta: var(--font-jakarta-var);
+  --font-jetbrains: var(--font-jetbrains-var);
+}
+
+/* ─── Base Styles ─────────────────────────────────────────────── */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0A1628;
+    color: #ffffff;
+    font-family: var(--font-jakarta-var), system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* ─── Typography Utilities ────────────────────────────────────── */
+.font-sora {
+  font-family: var(--font-sora-var), system-ui, sans-serif;
+}
+
+.font-jakarta {
+  font-family: var(--font-jakarta-var), system-ui, sans-serif;
+}
+
+.font-jetbrains {
+  font-family: var(--font-jetbrains-var), monospace;
+}
+
+/* ─── Glassmorphism Utilities ─────────────────────────────────── */
+.glass {
+  background: rgba(26, 37, 56, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(26, 37, 56, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ─── Grid Background Pattern ─────────────────────────────────── */
+.grid-pattern {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* ─── Gradient Border Utility ─────────────────────────────────── */
+.gradient-border {
+  position: relative;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, #203BE0, #4A90D9, #F5A623);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* ─── Glow Effects ────────────────────────────────────────────── */
+.glow-indigo {
+  box-shadow: 0 0 30px rgba(32, 59, 224, 0.3), 0 0 60px rgba(32, 59, 224, 0.1);
+}
+
+.glow-saffron {
+  box-shadow: 0 0 30px rgba(245, 166, 35, 0.3), 0 0 60px rgba(245, 166, 35, 0.1);
+}
+
+/* ─── Animated Gradient Border ────────────────────────────────── */
+@keyframes border-glow {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-border-glow {
+  animation: border-glow 3s ease-in-out infinite;
+}
+
+/* ─── Section Spacing ─────────────────────────────────────────── */
+.section-padding {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+/* ─── Scrollbar Styling ───────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111A28;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #243044;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4A90D9;
+}
+
+/* ─── Selection ───────────────────────────────────────────────── */
+::selection {
+  background: rgba(32, 59, 224, 0.4);
+  color: #ffffff;
+}
