@@ -2,6 +2,20 @@
 
 /* ─── Custom Theme Tokens ─────────────────────────────────────── */
 @theme inline {
+  --color-primary: #1B2D8F;
+  --color-primary-dark: #132270;
+  --color-accent: #D93025;
+  --color-accent-light: #FF4438;
+  --color-gold: #B8860B;
+  --color-gold-light: #E6A817;
+  --color-bg: #F9F8F5;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F2F4FA;
+  --color-border: #E3E8F4;
+  --color-border-strong: #C9D2E8;
+  --color-ink: #0E1117;
+  --color-ink-secondary: #3D4A63;
+  --color-ink-muted: #7A869A;
   --color-navy: #0A1628;
   --color-navy-light: #142338;
   --color-navy-lighter: #1e3048;
@@ -16,6 +30,8 @@
   --color-slate-400: #94a3b8;
   --color-slate-500: #64748b;
 
+  --font-display: var(--font-cormorant);
+  --font-body: var(--font-outfit);
   --font-sora: var(--font-sora-var);
   --font-jakarta: var(--font-jakarta-var);
   --font-jetbrains: var(--font-jetbrains-var);
@@ -32,9 +48,9 @@
   }
 
   body {
-    background-color: #0A1628;
-    color: #ffffff;
-    font-family: var(--font-jakarta-var), system-ui, sans-serif;
+    background-color: #F9F8F5;
+    color: #0E1117;
+    font-family: var(--font-outfit), sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }

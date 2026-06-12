@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import { SectionHeading } from "@/components/shared/SectionHeading";
@@ -143,9 +144,10 @@ export function PricingSection() {
                 </ul>
 
                 {/* CTA */}
-                <button
+                <Link
+                  href="/platforms/jeerankup"
                   className={cn(
-                    "w-full py-3.5 rounded-lg font-semibold text-sm transition-all duration-300 hover:-translate-y-0.5",
+                    "block w-full py-3.5 rounded-lg font-semibold text-sm text-center transition-all duration-300 hover:-translate-y-0.5",
                     plan.popular
                       ? "bg-indigo hover:bg-indigo-light text-white shadow-lg shadow-indigo/25 hover:shadow-indigo/40"
                       : plan.premium
@@ -154,7 +156,7 @@ export function PricingSection() {
                   )}
                 >
                   {plan.cta}
-                </button>
+                </Link>
               </div>
             </motion.div>
           ))}

@@ -67,20 +67,20 @@ export function HeroSection() {
 
             <motion.div variants={item} className="flex flex-wrap gap-4">
               <Link
-                href="/platforms"
+                href="/platforms/jeerankup"
                 className="group px-6 py-3 bg-indigo hover:bg-indigo-light text-white font-semibold text-sm rounded-lg transition-all duration-300 shadow-lg shadow-indigo/25 hover:shadow-indigo/40 hover:-translate-y-0.5 flex items-center gap-2"
               >
-                Explore Platforms
+                Explore JeeRankUp
                 <ArrowRight
                   size={16}
                   className="group-hover:translate-x-1 transition-transform"
                 />
               </Link>
               <Link
-                href="/#pricing"
+                href="/platforms/jeerankup"
                 className="px-6 py-3 border border-white/20 hover:border-white/40 text-white font-semibold text-sm rounded-lg transition-all duration-300 hover:bg-white/5 hover:-translate-y-0.5"
               >
-                View Plans
+                Take Free Mock Test
               </Link>
             </motion.div>
 

@@ -544,7 +544,7 @@ export const timeline: TimelineEvent[] = [
 
 // ─── Navigation Data ─────────────────────────────────────────────
 export const navLinks = [
-  { name: "Platforms", href: "/platforms" },
+  { name: "Platforms", href: "/platforms/jeerankup" },
   { name: "Plans", href: "/#pricing" },
   { name: "About Us", href: "/about" },
   { name: "Blog", href: "/blogs" },

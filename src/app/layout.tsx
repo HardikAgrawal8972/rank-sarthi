@@ -1,20 +1,20 @@
 import type { Metadata } from "next";
-import { Sora, Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
+import { Cormorant_Garamond, JetBrains_Mono, Outfit } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 
-const sora = Sora({
-  variable: "--font-sora-var",
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
   subsets: ["latin"],
-  weight: ["400", "600", "700", "800"],
+  weight: ["400", "600", "700"],
   display: "swap",
 });
 
-const jakarta = Plus_Jakarta_Sans({
-  variable: "--font-jakarta-var",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -62,9 +62,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${sora.variable} ${jakarta.variable} ${jetbrains.variable} antialiased`}
+      className={`${cormorant.variable} ${outfit.variable} ${jetbrains.variable} antialiased`}
     >
-      <body className="min-h-screen flex flex-col bg-navy text-white font-jakarta overflow-x-hidden">
+      <body className="min-h-screen flex flex-col bg-[#F9F8F5] text-[#0E1117] font-body overflow-x-hidden">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

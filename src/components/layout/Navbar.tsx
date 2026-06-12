@@ -74,7 +74,7 @@ export function Navbar() {
               Log In
             </button>
             <Link
-              href="/#pricing"
+              href="/platforms/jeerankup"
               className="px-5 py-2.5 bg-saffron hover:bg-saffron-light text-navy font-semibold text-sm rounded-lg transition-all duration-200 shadow-lg shadow-saffron/20 hover:shadow-saffron/30 hover:-translate-y-0.5"
             >
               Start Free Test
@@ -129,7 +129,7 @@ export function Navbar() {
                   Log In
                 </button>
                 <Link
-                  href="/#pricing"
+                  href="/platforms/jeerankup"
                   onClick={() => setIsOpen(false)}
                   className="block w-full px-4 py-3 bg-saffron hover:bg-saffron-light text-navy font-semibold text-sm rounded-lg text-center transition-all shadow-lg shadow-saffron/20"
                 >
