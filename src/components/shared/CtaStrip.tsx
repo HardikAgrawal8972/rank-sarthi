@@ -24,7 +24,7 @@ export default function CtaStrip({
       <div className="absolute -bottom-16 -right-16 size-60 rounded-full bg-[rgba(255,255,255,.10)]" />
 
       <div className="relative z-10 mx-auto max-w-[1160px] px-6">
-        <h2 className="mb-3 font-display text-[clamp(32px,6vw,52px)] font-bold leading-[1.1] tracking-normal text-[#FFFFFF] [&_em]:text-[#E6A817] [&_em]:italic">
+        <h2 className="mb-3 font-sora text-[clamp(32px,6vw,52px)] font-bold leading-[1.1] tracking-normal text-[#FFFFFF] [&_em]:text-[#E6A817] [&_em]:italic">
           {heading}
         </h2>
         <p className="mx-auto mb-8 max-w-[680px] text-base text-[rgba(255,255,255,.65)]">

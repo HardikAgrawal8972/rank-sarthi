@@ -82,7 +82,7 @@ export default function FeaturesGrid({ features }: FeaturesGridProps) {
           <div className="mb-3 flex items-center justify-center gap-2.5 text-[11.5px] font-bold uppercase tracking-[0.12em] text-[#D93025] before:block before:h-0.5 before:w-7 before:bg-[#D93025]">
             What's Included
           </div>
-          <h2 className="font-display text-[clamp(32px,6vw,52px)] font-bold leading-[1.1] tracking-normal text-[#0E1117]">
+          <h2 className="font-sora text-[clamp(32px,6vw,52px)] font-bold leading-[1.1] tracking-normal text-[#0E1117]">
             Everything you need to <span className="text-[#1B2D8F]">crack JEE</span>
           </h2>
         </div>
@@ -106,7 +106,7 @@ export default function FeaturesGrid({ features }: FeaturesGridProps) {
               <div className="mb-3.5 text-[28px]" aria-hidden="true">
                 {feature.icon}
               </div>
-              <h3 className="mb-2 font-display text-xl font-bold leading-tight text-[#0E1117]">
+              <h3 className="mb-2 font-sora text-xl font-bold leading-tight text-[#0E1117]">
                 {feature.title}
               </h3>
               <p className="text-[13.5px] leading-[1.65] text-[#3D4A63]">

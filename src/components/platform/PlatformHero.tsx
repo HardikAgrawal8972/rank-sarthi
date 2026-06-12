@@ -35,11 +35,11 @@ export default function PlatformHero({ data }: PlatformHeroProps) {
               <span>{data.exam}</span>
             </div>
 
-            <h1 className="mb-3 font-display text-[clamp(48px,9vw,76px)] font-bold leading-none tracking-normal text-[#0E1117]">
+            <h1 className="mb-3 font-sora text-[clamp(48px,9vw,76px)] font-bold leading-none tracking-normal text-[#0E1117]">
               {data.name}
             </h1>
 
-            <p className="mb-[18px] font-display text-xl italic text-[#1B2D8F]">
+            <p className="mb-[18px] font-sora text-xl italic text-[#1B2D8F]">
               {data.tagline}
             </p>
 
@@ -65,7 +65,7 @@ export default function PlatformHero({ data }: PlatformHeroProps) {
             <div className="grid grid-cols-2 gap-4 rounded-[12px] border border-[#E3E8F4] border-b-[3px] border-b-[#1B2D8F] bg-[#F9F8F5] px-6 py-5 sm:grid-cols-5 sm:gap-7">
               {data.stats.map((stat) => (
                 <div className="text-center" key={stat.label}>
-                  <div className="font-display text-[28px] font-bold leading-none text-[#1B2D8F]">
+                  <div className="font-sora text-[28px] font-bold leading-none text-[#1B2D8F]">
                     {stat.value}
                   </div>
                   <div className="mt-1 text-[11px] font-medium text-[#7A869A]">

@@ -21,7 +21,7 @@ export default function SyllabusSection({ subjects }: SyllabusSectionProps) {
           <div className="mb-3 flex items-center justify-center gap-2.5 text-[11.5px] font-bold uppercase tracking-[0.12em] text-[#D93025] before:block before:h-0.5 before:w-7 before:bg-[#D93025]">
             Syllabus Coverage
           </div>
-          <h2 className="font-display text-[clamp(32px,6vw,52px)] font-bold leading-[1.1] tracking-normal text-[#0E1117]">
+          <h2 className="font-sora text-[clamp(32px,6vw,52px)] font-bold leading-[1.1] tracking-normal text-[#0E1117]">
             Complete coverage, <span className="text-[#1B2D8F]">zero gaps</span>
           </h2>
           <p className="mt-3 text-[15.5px] text-[#3D4A63]">
@@ -39,7 +39,7 @@ export default function SyllabusSection({ subjects }: SyllabusSectionProps) {
                 <span className="text-[22px]" aria-hidden="true">
                   {subject.icon}
                 </span>
-                <h3 className="font-display text-xl font-bold leading-tight text-[#0E1117]">
+                <h3 className="font-sora text-xl font-bold leading-tight text-[#0E1117]">
                   {subject.name}
                 </h3>
                 <span className="ml-auto rounded-full bg-[rgba(255,255,255,.7)] px-2.5 py-1 text-xs font-semibold text-[#7A869A]">
